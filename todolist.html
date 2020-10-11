@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="stilmall.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Att göra-lista</title>
+</head>
+
+<body onload="appendLocalStorage()">
+    <!--Uppgifter som läggs till hamnar här-->
+
+    <div class="main">
+            <h1>To do:</h1>
+                <!--Lägger till punkter på att göra-listan-->
+                    <input type="text" id="todoitem" onfocus="this.value=''">
+                    <input type="button" value="Add item" onclick="addItem();">
+                <!--Att göra-listan hamnar här-->
+                    <div id="todolist"></div>
+                    <h4 id="numToDo"></h4>
+                <!--Knappar för vad man vill göra med listan-->
+                <input type="button" class="button-alt" value="Save" onclick="storeItem();">
+                <input type="button" class="button-alt" value="Clear all" onclick="clearAll();">
+    </div>
+    
+</body>
+</html>
