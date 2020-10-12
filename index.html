@@ -17,13 +17,14 @@
             <h1>To do:</h1>
                 <!--Lägger till punkter på att göra-listan-->
                     <input type="text" id="todoitem" onfocus="this.value=''">
-                    <input type="button" value="Add item" onclick="addItem();">
+
+                    <button type="button" onclick="addItem();">Add item</button>
                 <!--Att göra-listan hamnar här-->
                     <div id="todolist"></div>
                     <h4 id="numToDo"></h4>
                 <!--Knappar för vad man vill göra med listan-->
-                <input type="button" class="button-alt" value="Save" onclick="storeItem();">
-                <input type="button" class="button-alt" value="Clear all" onclick="clearAll();">
+                <button type="button" onclick="storeItem();">Save</button> 
+                <button type="button" onclick="clearAll();">Clear all</button>
     </div>
     
 </body>

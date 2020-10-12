@@ -29,7 +29,7 @@ h1 {
     padding: 20px 20px 20px 50px;
 }
 
-input[type=button] {
+button {
     background: #db6150;
     color: #f1e6e2;
     font-family: 'Roboto Mono', monospace;
@@ -42,7 +42,7 @@ input[type=button] {
     margin: 0 auto;
     }
 
-input[type=button]:hover {
+button:hover {
     background: #d4a337;
     color: #f1e6e2;
     }
